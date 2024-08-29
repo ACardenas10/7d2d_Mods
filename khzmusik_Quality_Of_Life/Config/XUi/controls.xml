@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- Make the "locked" icons a little more visible -->
+    <set xpath="//backpack_item_stack/rect/button[@name='rectSlotLock']/sprite/@color">{# userlockedslot ? '222,206,163' : '160,160,160' }</set>
+    <set xpath="//backpack_item_stack/rect/sprite[@name='iconSlotLock']/@color">222,206,163,192</set>
+    <!-- Use better lock/unlock sounds -->
+    <setattribute xpath="//backpack_item_stack/rect/button[@name='rectSlotLock']" name="sound">{# userlockedslot ? 'Sounds/Electricity/Lights/light_off' : 'Sounds/Electricity/Lights/light_on' }</setattribute>
+</config>

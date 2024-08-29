@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- Large bushes and hedges should give more wood than the small dead bushes -->
+    <set xpath="//block[@name='treeAzalea']/drop[@name='resourceWood']/@count">2,5</set>
+    <set xpath="//block[@name='plantHedge']/drop[@name='resourceWood']/@count">2,5</set>
+</config>

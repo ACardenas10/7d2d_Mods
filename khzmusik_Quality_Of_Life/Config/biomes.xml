@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- Slightly increase the number of rocks -->
+    <set xpath="//decoration[starts-with(@blockname,'resourceRock') and @prob='.00033']/@prob">.0004</set>
+    <set xpath="//decoration[starts-with(@blockname,'resourceRock') and @prob='.0002']/@prob">.00033</set>
+</config>

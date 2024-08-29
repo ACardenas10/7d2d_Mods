@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- There's a bug in this quest where the "Trader" location isn't shown in the UI. -->
+    <append xpath="//quest[@id='quest_whiteRiverCitizen1']/objective[@type='Goto']">
+        <property name="location_name" value="xuiTrader" />
+    </append>
+</config>
