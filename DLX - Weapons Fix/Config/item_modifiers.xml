@@ -1,0 +1,683 @@
+<configs>
+
+<!-- SCOPE SMALL -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
+	
+<!-- PIPE PISTOL -->	
+		<item_property_overrides name="gunHandgunT0PipePistol">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.01987505, -0.00978507"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunHandgunT0PipePistol"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope05a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+	
+<!-- PISTOL -->	
+		<item_property_overrides name="gunHandgunT1Pistol">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-0.0003996492, -0.0160017, -0.09569907"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunHandgunT1Pistol"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope03a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+
+
+<!-- MAGNUM -->	
+		<item_property_overrides name="gunHandgunT2Magnum44">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.0121, -0.1351989"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunHandgunT2Magnum44"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope02a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+
+
+<!-- DESERT VULTURE -->	
+		<item_property_overrides name="gunHandgunT3DesertVulture">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.01689804, -0.2035493"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunHandgunT3DesertVulture"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope02a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- SMG -->	
+		<item_property_overrides name="gunHandgunT3SMG5">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.003230393, -0.1075"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunHandgunT3SMG5"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope02a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+			
+		
+<!-- PIPE MACHINE GUN -->		
+		<item_property_overrides name="gunMGT0PipeMachineGun">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.01121342, -0.03447936"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT0PipeMachineGun"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope02a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+
+
+<!-- AK 47 -->		
+		<item_property_overrides name="gunMGT1AK47">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.02410054, 0.289036"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT1AK47"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- TACTICAL ASSAULT RIFLE -->	
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-0.0007750988, -0.0007953644, 0.0289"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT2TacticalAR"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- M60 -->	
+		<item_property_overrides name="gunMGT3M60">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.0155583, 0.2174"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT3M60"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- PIPE RIFLE -->
+		<item_property_overrides name="gunRifleT0PipeRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.004120827, -0.2019013"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT0PipeRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope04a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- HUNTING RIFLE -->
+		<item_property_overrides name="gunRifleT1HuntingRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="1.072884E-06, 0.00887835, 0.1663002"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT1HuntingRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope04a.prefab" parent_transform="Attachments"/>
+		</effect_group>		
+
+
+<!-- LEVER ACTION RIFLE -->
+		<item_property_overrides name="gunRifleT2LeverActionRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.001694679, 0.0246"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT2LeverActionRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>		
+
+
+<!-- SNIPER RIFLE -->
+		<item_property_overrides name="gunRifleT3SniperRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-3.635884E-06, -0.009015083, 0.0206"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT3SniperRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>		
+
+
+<!-- IRON CROSSBOW -->
+		<item_property_overrides name="gunBowT1IronCrossbow">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0.0003918183, -0.01551981, 0.1251351"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunBowT1IronCrossbow"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+		
+		
+<!-- COMPOUND CROSSBOW -->
+		<item_property_overrides name="gunBowT3CompoundCrossbow">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-7.433624E-06, -0.01258327, 0.05870772"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunBowT3CompoundCrossbow"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>				
+	</append>
+	
+	
+	
+<!-- SCOPE MEDIUM -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">	
+
+<!-- PIPE MACHINE GUN -->	
+		<item_property_overrides name="gunMGT0PipeMachineGun">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.01121342, -0.0576"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT0PipeMachineGun"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope02a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+
+
+<!-- AK 47 -->	
+		<item_property_overrides name="gunMGT1AK47">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.02410054, 0.2664392"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT1AK47"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+		
+		
+<!-- TACTICAL ASSAULT RIFLE -->	
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-0.0007750988, -0.0007953644, 0.0059"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT2TacticalAR"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- M60 -->	
+		<item_property_overrides name="gunMGT3M60">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="55"/>
+			<property name="Zoom_max_in" value="55"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.0155583, 0.1944"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunMGT3M60"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- PIPE RIFLE -->
+		<item_property_overrides name="gunRifleT0PipeRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.004120827, -0.2247017"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT0PipeRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope04a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+		
+<!-- HUNTING RIFLE -->		
+		<item_property_overrides name="gunRifleT1HuntingRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="1.072884E-06, 0.00887835, 0.143"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT1HuntingRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope04a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+
+
+<!-- LEVER ACTION RIFLE -->	
+		<item_property_overrides name="gunRifleT2LeverActionRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.001694679, 0.0021"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT2LeverActionRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+		
+		
+<!-- SNIPER RIFLE -->		
+		<item_property_overrides name="gunRifleT3SniperRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-3.635884E-06, -0.009015083, -0.0017"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT3SniperRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+
+
+<!-- IRON CROSSBOW -->
+		<item_property_overrides name="gunBowT1IronCrossbow">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0.0003918183, -0.01551981, 0.1025004"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunBowT1IronCrossbow"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+		
+		
+<!-- COMPOUND CROSSBOW -->
+		<item_property_overrides name="gunBowT3CompoundCrossbow">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="48"/>
+			<property name="Zoom_max_in" value="48"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-7.433624E-06, -0.01258327, 0.03600028"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunBowT3CompoundCrossbow"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>			
+		
+	</append>
+	
+	
+	
+<!-- SCOPE LARGE -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+	
+	<!-- PIPE RIFLE -->
+		<item_property_overrides name="gunRifleT0PipeRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="30"/>
+			<property name="Zoom_max_in" value="30"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.004120827, -0.245"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT0PipeRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope04a.prefab" parent_transform="Attachments"/>
+		</effect_group>
+		
+	
+<!-- HUNTING RIFLE -->
+		<item_property_overrides name="gunRifleT1HuntingRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="30"/>
+			<property name="Zoom_max_in" value="30"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="1.072884E-06, 0.00887835, 0.1225995"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT1HuntingRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope04a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+		
+		
+<!-- LEVER ACTION RIFLE -->	
+		<item_property_overrides name="gunRifleT2LeverActionRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="30"/>
+			<property name="Zoom_max_in" value="30"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="0, -0.001694679, -0.0179"/>
+		</item_property_overrides>	
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT2LeverActionRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>	
+	
+	
+<!-- SNIPER RIFLE -->	
+		<item_property_overrides name="gunRifleT3SniperRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="30"/>
+			<property name="Zoom_max_in" value="30"/>
+			<property name="Zoom_overlay" value=""/>
+			<property name="ScopeCameraOffset" value="-3.635884E-06, -0.009015083, -0.0217"/>
+		</item_property_overrides>
+		<effect_group tiered="false" name="DLX_Scopes Attach">
+			<requirement name="HoldingItemHasTags" tags="gunRifleT3SniperRifle"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/A21-DLX-Scopes.unity3d?Scope01a.prefab" parent_transform="Attachments"/>
+		</effect_group>			
+	
+	</append>
+	
+	
+	
+<!-- RELFEX -->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">		
+		<item_property_overrides name="gunHandgunT0PipePistol">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="0, -0.0038, 0.033"/>	 
+		</item_property_overrides>	
+		<item_property_overrides name="gunHandgunT1Pistol">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="-0.00045,-0.01265,0.033"/>	 
+		</item_property_overrides>	
+		<item_property_overrides name="gunHandgunT2Magnum44">
+			<property name="CrosshairOnAim" value="false"/>	
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="0,-0.0132,0.02075"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT3SMG5">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="0,-0.0155, -0.02130"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT3DesertVulture">
+			<property name="CrosshairOnAim" value="false"/>	
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="0,-0.0085, 0.0325"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT1AK47">
+			<property name="CrosshairOnAim" value="false"/>	
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>	
+			<property name="ScopeCameraOffset" value="-0.0001, -0.0235, 0.2567"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT2TacticalAR">
+			<property name="CrosshairOnAim" value="false"/>	
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="-0.0008, 0.0008, 0"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT0PipeRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>			
+			<property name="ScopeCameraOffset" value="0, -0.0007, -0.0365"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT1HuntingRifle">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>			
+			<property name="ScopeCameraOffset" value="-0.0001,-0.0114, -0.027"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT2LeverActionRifle">
+			<property name="CrosshairOnAim" value="false"/>	
+			<property name="Zoom_max_out" value="56"/>
+			<property name="Zoom_max_in" value="56"/>
+			<property name="ScopeCameraOffset" value="-0.0004, -0.0133, 0.027"/>
+		</item_property_overrides>
+	</append>	
+	
+	
+	
+<!-- FLASHLIGHT -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<effect_group tiered="false" name="FlashLight DLX attachments">
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="lightSource"/>				
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="lightSource"/>
+		</effect_group>
+	</append>
+
+
+
+<!-- LASER SIGHT -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<effect_group tiered="false" name="LaserSight DLX attachments">
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="laserSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="laserSource"/>				
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Attachment" transform_path="laserSource"/>	
+		</effect_group>
+	</append>
+	
+	
+	
+<!-- MUZZLE BRAKE -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']">
+		<effect_group tiered="false" name="MuzzleBrake DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MuzzleBrake"/>			
+		</effect_group>
+
+	</append>
+
+
+
+<!-- BARREL EXTENDER -->			
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">			
+		<effect_group tiered="false" name="BarrelExtender DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="BarrelExtender"/>
+
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunBarrelTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunBarrelTBR"/>				
+		</effect_group>
+	</append>
+	
+	
+	
+<!-- MAGAZINE EXTENDER -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">	
+		<effect_group tiered="false" name="MagazineExtender attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="MagazineExtender"/>			
+	
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunMagazineTBR"/>				
+		</effect_group>
+	</append>		
+	
+	
+	
+<!-- DRUM MAGAZINE -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">	
+		<effect_group tiered="false" name="DrumMagazine DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="DrumMagazine"/>			
+	
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunMagazineTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunMagazineTBR"/>				
+		</effect_group>
+	</append>
+	
+	
+	
+<!-- RETRACTING STOCK -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']">	
+		<effect_group tiered="false" name="RetractingStock DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="RetractingStock"/>			
+	
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunStockTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunStockTBR"/>				
+		</effect_group>	
+	</append>	
+	
+	
+	
+<!-- FORE GRIP -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">	
+		<effect_group tiered="false" name="ForeGrip DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="ForeGrip"/>			
+		
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="false" parent_transform="GunModel" transform_path="GunGripTBR"/>			
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" parent_transform="GunModel" transform_path="GunGripTBR"/>	
+		</effect_group>	
+	</append>	
+	
+	
+	
+<!-- BIPOD -->	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBipod']">	
+		<effect_group tiered="false" name="Bipod DLX attachments">	
+			<requirement name="HoldingItemHasTags" tags="DLXAttachments"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfStand" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+			<triggered_effect trigger="onSelfWalk" action="SetTransformActive" active="true" parent_transform="Attachment" transform_path="Bipod"/>			
+		</effect_group>	
+	</append>	
+	
+</configs>

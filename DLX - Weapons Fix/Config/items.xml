@@ -1,0 +1,210 @@
+<configs>
+		
+<!-- PIPE PISTOL -->
+	<append xpath="items/item[@name='gunHandgunT0PipePistol']">
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,DLXAttachments"/>
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-PipeRevolver19.prefab"/>							
+		<property name="CrosshairOnAim" value="false"/>
+		
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0, 0, 0.2098"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/>			
+		</property>		
+	</append>
+	
+	
+	
+<!-- PISTOL -->
+	<append xpath="items/item[@name='gunHandgunT1Pistol']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-Pistol47.prefab"/>				
+		<property name="CrosshairOnAim" value="false"/>
+		
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="-0.0006, 0.0058, 0.0359"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/>			
+		</property>	
+	</append>
+	
+	
+	
+<!-- MAGNUM -->
+	<append xpath="items/item[@name='gunHandgunT2Magnum44']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-Magnum23.prefab"/>
+		<property name="CrosshairOnAim" value="false"/>
+							
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="-0.0003, 0.0187, 0.071"/> 
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 				
+		</property>	
+	</append>
+	
+
+	
+<!-- DESERT VULTURE -->
+	<append xpath="items/item[@name='gunHandgunT3DesertVulture']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-DesertEagle7.prefab"/>				
+		<property name="CrosshairOnAim" value="false"/>
+		
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0, 0.0055, 0.0913003"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/>			
+		</property>	
+	</append>
+	
+
+	
+<!-- SMG -->
+	<append xpath="items/item[@name='gunHandgunT3SMG5']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-SMG.prefab"/>				
+		<property name="CrosshairOnAim" value="false"/>
+		
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0, 0.017, -0.075"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/>			
+		</property>	
+	</append>
+	
+
+
+<!-- AK 47 -->	
+	<append xpath="items/item[@name='gunMGT1AK47']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-Ak4715.prefab"/>	
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="-0.0001, 0.0078, 0.15755"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 			
+		</property>	
+	</append>
+	
+	
+	
+<!-- TACTICAL ASSAULT RIFLE -->	
+	<append xpath="items/item[@name='gunMGT2TacticalAR']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-TacticalActionRifle3.prefab"/>	
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="-0.0009, 0.0129, 0"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 			
+		</property>	
+	</append>
+	
+	
+	
+<!-- M60 -->	
+	<append xpath="items/item[@name='gunMGT3M60']">
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0,0,0"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 			
+		</property>	
+	</append>
+	
+	
+	
+<!-- PIPE RIFLE -->
+	<append xpath="items/item[@name='gunRifleT0PipeRifle']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-PipeRifle19.prefab"/>
+	
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="-0.0002, 0.0144, -0.02"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 				
+		</property>	
+	</append>
+	
+	
+	
+<!-- HUNTING RIFLE -->
+	<append xpath="items/item[@name='gunRifleT1HuntingRifle']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-HuntingRifle28.prefab"/>
+	
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0, 0.0387, 0.0921"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 				
+		</property>	
+	</append>
+	
+	
+	
+<!-- LEVER ACTION RIFLE -->
+	<append xpath="items/item[@name='gunRifleT2LeverActionRifle']">
+		<property name="Meshfile" value="#@modfolder:Resources/A21-DLX-Weapons.unity3d?A21-DLX-LeverActionRifle6.prefab"/>
+	
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0, 0.0244, 0"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 				
+		</property>	
+	</append>
+	
+	
+	
+<!-- SNIPER RIFLE -->
+	<append xpath="items/item[@name='gunRifleT3SniperRifle']">
+
+		<property name="CrosshairOnAim" value="false"/>
+					
+		<property class="Action1">
+			<property name="SightsCameraOffset" value="0, 0.0173, 0"/>
+			<property name="Zoom_max_out" value="57"/>
+			<property name="Zoom_max_in" value="57"/> 				
+		</property>	
+	</append>
+	
+	
+
+<!-- TAGS -->
+	<!-- Pistols -->	
+	<append xpath="items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">,DLXAttachments,gunHandgunT0PipePistol</append>
+	<append xpath="items/item[@name='gunHandgunT1Pistol']/property[@name='Tags']/@value">,DLXAttachments,gunHandgunT1Pistol</append>
+	<append xpath="items/item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">,stock,DLXAttachments,gunHandgunT3SMG5</append>
+	<append xpath="items/item[@name='gunHandgunT2Magnum44']/property[@name='Tags']/@value">,DLXAttachments,gunHandgunT2Magnum44</append>
+	<append xpath="items/item[@name='gunHandgunT3DesertVulture']/property[@name='Tags']/@value">,DLXAttachments,gunHandgunT3DesertVulture</append>
+
+	<!-- ShotGuns -->
+	<append xpath="items/item[@name='gunShotgunT0PipeShotgun']/property[@name='Tags']/@value">,DLXAttachments,gunShotgunT0PipeShotgun</append>
+	<append xpath="items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='Tags']/@value">,DLXAttachments,gunShotgunT1DoubleBarrel</append>
+	<append xpath="items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Tags']/@value">,DLXAttachments,gunShotgunT2PumpShotgun</append>
+	<append xpath="items/item[@name='gunShotgunT3AutoShotgun']/property[@name='Tags']/@value">,DLXAttachments,gunShotgunT3AutoShotgun</append>
+
+	<!-- Rifles -->
+	<append xpath="items/item[@name='gunRifleT0PipeRifle']/property[@name='Tags']/@value">,DLXAttachments,gunRifleT0PipeRifle</append>
+	<append xpath="items/item[@name='gunRifleT1HuntingRifle']/property[@name='Tags']/@value">,DLXAttachments,gunRifleT1HuntingRifle</append>
+	<append xpath="items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Tags']/@value">,DLXAttachments,gunRifleT2LeverActionRifle</append>
+	<append xpath="items/item[@name='gunRifleT3SniperRifle']/property[@name='Tags']/@value">,DLXAttachments,gunRifleT3SniperRifle</append>
+	
+	<!-- Machine Guns -->
+	<append xpath="items/item[@name='gunMGT0PipeMachineGun']/property[@name='Tags']/@value">,DLXAttachments,gunMGT0PipeMachineGun</append>
+	<append xpath="items/item[@name='gunMGT1AK47']/property[@name='Tags']/@value">,DLXAttachments,gunMGT1AK47</append>
+	<append xpath="items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">,DLXAttachments,gunMGT2TacticalAR</append>
+	<append xpath="items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">,DLXAttachments,gunMGT3M60</append>
+	
+	<!-- Rocket Launcher -->
+	<append xpath="items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='Tags']/@value">,DLXAttachments,gunExplosivesT3RocketLauncher</append>
+
+	<!-- Archery -->
+	<append xpath="items/item[@name='gunBowT0PrimitiveBow']/property[@name='Tags']/@value">,DLXAttachments,gunBowT0PrimitiveBow</append>
+	<append xpath="items/item[@name='gunBowT1WoodenBow']/property[@name='Tags']/@value">,DLXAttachments,gunBowT1WoodenBow</append>
+	<append xpath="items/item[@name='gunBowT3CompoundBow']/property[@name='Tags']/@value">,DLXAttachments,gunBowT3CompoundBow</append>
+	<append xpath="items/item[@name='gunBowT1IronCrossbow']/property[@name='Tags']/@value">,DLXAttachments,gunBowT1IronCrossbow</append>
+	<append xpath="items/item[@name='gunBowT3CompoundCrossbow']/property[@name='Tags']/@value">,DLXAttachments,gunBowT3CompoundCrossbow</append>
+
+</configs>

@@ -1,0 +1,14 @@
+<configs>
+
+		<!--	GUN_TRADER	-->
+		
+	<append xpath="//trader_item_group[@name='groupRangedAll']">
+		<item name="IZYgunT1TradshotgunDoubleBarrelOverUnder" quality="1,5"/>
+		<item name="IZYgunT3TACshotgunM1014" quality="1,5"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoBrass']">
+			<item name="ammoShotgunShellPremium" count="12,60"/>
+	</append>
+
+</configs>	

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addnew>
+
+		<!--	Longbarrel		-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">
+			
+	</append>
+
+		<!--	MAGAZINE-DRUM 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">
+			
+	</append>
+
+		<!--	MAGAZINE-EXT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
+
+		
+	</append>
+
+			<!--	FORGRIP 	-->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
+		
+
+		
+	</append>
+
+		<!--	RET-STOCK 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']">
+	
+			
+	</append>
+
+		<!--	FLASHLIGHT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+	
+			
+	</append>
+
+		<!--	LASER   	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+	
+			
+	</append>
+
+		<!--	REFLEXSIGHT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+
+		<item_property_overrides name="IZYgunT1TradshotgunDoubleBarrelOverUnder">
+			<property name="ScopeCameraOffset" value=".0005,.00025,-.007"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+
+		<item_property_overrides name="IZYgunT3TACshotgunM1014">
+			<property name="ScopeCameraOffset" value=".0062,.028,.25"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+	</append>
+	
+		<!--	2XSCOPE	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+
+		<item_property_overrides name="IZYgunT1TradshotgunDoubleBarrelOverUnder">
+			<property name="ScopeCameraOffset" value=".0005,.001,-.04"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3TACshotgunM1014">
+			<property name="ScopeCameraOffset" value=".0062,.026,.25"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+	</append>
+	
+		<!--	Silencer 	-->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+
+		<item_property_overrides name="IZYgunT1TradshotgunDoubleBarrelOverUnder">
+			<property name="Sound_start" value="M1014A1_silen_fire"/>
+			<property name="Sound_repeat" value="M1014A1_silen_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="IZYgunT3TACshotgunM1014">
+			<property name="Sound_start" value="M1014A1_silen_fire"/>
+			<property name="Sound_repeat" value="M1014A1_silen_fire"/>
+		</item_property_overrides>
+	
+	</append>
+	
+			<!--	HOLD_STYLE 1	-->
+	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle01']">
+	
+
+		
+	</append>
+	
+			<!--	HOLD_STYLE 2	-->
+	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle02']">
+	
+		
+	</append>
+	
+</addnew>

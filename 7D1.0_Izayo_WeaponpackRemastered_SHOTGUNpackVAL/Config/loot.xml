@@ -1,0 +1,50 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT1_Boomstick']">
+						<!-- tier 01  -->
+		<lootgroup name="groupWeaponsT1_SHOTGUN_DBOverUnder" count="all" loot_quality_template="QLTemplateT1">
+			<item name="IZYgunT1TradshotgunDoubleBarrelOverUnder"/>
+		</lootgroup>
+
+	</insertAfter>
+		
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT3_Boomstick']">
+						<!-- tier 03  -->
+		<lootgroup name="groupWeaponsT3_SHOTGUN_M1014" count="all" loot_quality_template="QLTemplateT3">
+			<item name="IZYgunT3TACshotgunM1014"/>
+		</lootgroup>
+
+	</insertAfter>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+		<!-- Adding new weapon groups to loot groups  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	<append xpath="//lootgroup[@name='groupWeaponsT1_Ranged']">	
+		<item group="groupWeaponsT1_SHOTGUN_DBOverUnder"/>
+	</append>
+	
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT3_Ranged']">	
+		<item group="groupWeaponsT3_SHOTGUN_M1014"/>
+	</append>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+				<!-- QUEST REWARD sg GUN  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT1']">	
+		<item name="IZYgunT1TradshotgunDoubleBarrelOverUnder"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT3']">	
+		<item name="IZYgunT3TACshotgunM1014"/>
+	</append>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+					<!-- add new AMMO -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+
+
+</configs>

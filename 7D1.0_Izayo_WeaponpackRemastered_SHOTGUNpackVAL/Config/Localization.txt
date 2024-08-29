@@ -1,0 +1,8 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+ammoShotgunShellPremium,items,gun,,Shotgun Shell Enchanted.,Shotgun Shell Enchanted.,,,,,,,,,,,,,,
+ammoShotgunShellPremiumDesc,items,gun,,,Work like a normal shotgun shell.\nBut double the range.\nLess spread.Small Damage increased.,,,,,,,,,,,,,,,
+IZYgunT1TradshotgunDoubleBarrelOverUnder,items,gun,,Double Barrel Shotgun (O.U.) (T1),Double Barrel Shotgun (O.U.) (T1),,,,,,,,,,,,,,
+IZYgunT1TradshotgunDoubleBarrelOverUnderDesc,items,gun,,,A simple shotgun with 2 barrels Over and Under.\nVery popular in Shooting sport.\nRepair with a - Repair Kit.\nScrap to - MShotgunParts.,,,,,,,,,,,,,,,
+IZYgunT3TACshotgunM1014,items,gun,,M1014 Combat Shotgun (T3),M1014 Combat Shotgun (T3),,,,,,,,,,,,,,
+IZYgunT3TACshotgunM1014Desc,items,gun,,,A Combat-Tactical Shotgun.\nUsed by U.S Military or even the Law Enforcement.\nRepair with a - Repair Kit.\nScrap to - MShotgunParts.,,,,,,,,,,,,,,,

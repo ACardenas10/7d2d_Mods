@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/Sounds">				
+		<SoundDataNode name="dlx_zoomScope_in"> <AudioSource name="Sounds/AudioSource_Melee"/>
+			<AudioClip ClipName="#@modfolder:Resources/DLX-Other.unity3d?zoomScope_in2"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value="0.1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		<SoundDataNode name="dlx_zoomScope_out"> <AudioSource name="Sounds/AudioSource_Melee"/>
+			<AudioClip ClipName="#@modfolder:Resources/DLX-Other.unity3d?zoomScope_out2"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value="0.1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+	</append>	
+</configs>

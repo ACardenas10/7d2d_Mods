@@ -1,0 +1,406 @@
+<configs>
+  <append xpath="/recipes">
+    <recipe name="modGunBarrelExtenderSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunBarrelExtender" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunMuzzleBrakeSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunMuzzleBrake" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunSoundSuppressorSilencerSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunSoundSuppressorSilencer" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunLaserSightSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunLaserSight" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunFlashlightSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunFlashlight" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunScopeSmallSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunScopeSmall" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunScopeMediumSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunScopeMedium" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunScopeLargeSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunScopeLarge" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunReflexSightSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunReflexSight" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunTriggerGroupSemiSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunTriggerGroupSemi" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunTriggerGroupBurst3Schematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunTriggerGroupBurst3" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunTriggerGroupAutomaticSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunTriggerGroupAutomatic" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunBipodSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunBipod" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunForegripSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunForegrip" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunRetractingStockSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunRetractingStock" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunDuckbillSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunDuckbill" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunChokeSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunChoke" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunMagazineExtenderSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunMagazineExtender" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modShotgunSawedOffBarrelSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modShotgunSawedOffBarrel" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunCrippleEmSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunCrippleEm" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunBowPolymerStringSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunBowPolymerString" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunBowArrowRestSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunBowArrowRest" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunMeleeTheHunterSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunMeleeTheHunter" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modGunMeleeRadRemoverSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modGunMeleeRadRemover" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeTemperedBladeSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeTemperedBlade" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeSerratedBladeSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeSerratedBlade" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeWeightedHeadSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeWeightedHead" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeStructuralBraceSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeStructuralBrace" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeErgonomicGripSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeErgonomicGrip" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeFortifyingGripSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeFortifyingGrip" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeClubBarbedWireSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeClubBarbedWire" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeClubMetalSpikesSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeClubMetalSpikes" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeGraveDiggerSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeGraveDigger" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeBunkerBusterSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeBunkerBuster" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeIronBreakerSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeIronBreaker" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeWoodSplitterSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeWoodSplitter" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modMeleeClubBurningShaftSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modMeleeClubBurningShaft" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorInsulatedLinerSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorInsulatedLiner" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorCoolingMeshSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorCoolingMesh" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorImprovedFittingsSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorImprovedFittings" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorCustomizedFittingsSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorCustomizedFittings" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorPlatingBasicSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorPlatingBasic" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorPlatingReinforcedSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorPlatingReinforced" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorStoragePocketSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorStoragePocket" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorDoubleStoragePocketSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorDoubleStoragePocket" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorTripleStoragePocketSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorTripleStoragePocket" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorQuadStoragePocketSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorQuadStoragePocket" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorMuffledConnectorsSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorMuffledConnectors" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorAdvancedMuffledConnectorsSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorAdvancedMuffledConnectors" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorImpactBracingSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorImpactBracing" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorBandolierSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorBandolier" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorWaterPurifierSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorWaterPurifier" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modArmorHelmetLightSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modArmorHelmetLight" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modFuelTankSmallSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modFuelTankSmall" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modFuelTankLargeSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modFuelTankLarge" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modRoboticDroneCargoModSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modRoboticDroneCargoMod" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modRoboticDroneMedicModSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modRoboticDroneMedicMod" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modRoboticDroneHeadlampModSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modRoboticDroneHeadlampMod" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modRoboticDroneArmorPlatingModSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modRoboticDroneArmorPlatingMod" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modRoboticDroneMoraleBoosterModSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modRoboticDroneMoraleBoosterMod" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehicleFuelSaverSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehicleFuelSaver" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehicleOffRoadHeadlightsSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehicleOffRoadHeadlights" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehicleSuperChargerSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehicleSuperCharger" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehicleExpandedSeatSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehicleExpandedSeat" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehicleReserveFuelTankSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehicleReserveFuelTank" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehiclePlowSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehiclePlow" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+    <recipe name="modVehicleArmorSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="modVehicleArmor" count="1"/>
+      <ingredient name="resourcePaper" count="50"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceLeather" count="2"/>
+    </recipe>
+  </append>
+</configs>

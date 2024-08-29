@@ -1,0 +1,447 @@
+<configs>
+<append xpath="/items">
+
+		<!--	***************************	-->
+		<!--	IZY_SG_AMMO_ADDON		-->
+		<!--	***************************	-->
+
+<item name="ammoShotgunShellPremium">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="CustomIcon" value="ammoShotgunShellPremium"/>
+	<property name="DescriptionKey" value="ammoShotgunShellPremiumDesc"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="15"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/><!-- ammoShotgunShell -->
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="shotgunshells_grab"/>
+	<property name="SoundPlace" value="shotgunshells_place"/>
+	<effect_group name="ammoShotgunShell" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="13" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkBoomstick"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkBoomstick"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/>
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+	</effect_group>
+</item>
+
+		<!--	***************************	-->
+		<!--	IZY_RM_SHOTGUNPACK    	 -->
+		<!--	***************************	-->
+
+<item name="IZYgunT1TradshotgunDoubleBarrelOverUnder"> 		<!-- No_reload_penalty_by_default	 -->
+	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,shotgun,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
+	<property name="DisplayType" value="rangedShotgun"/>
+	<property name="HoldType" value="82"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?IZY_Shotgun_Overunder.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?DROP_Shotgun_Overunder.Prefab"/>
+	<property name="Material" value="MShotgunParts"/>
+	<property name="Weight" value="1"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="CustomIcon" value="IZYgunT1TradshotgunDoubleBarrelOverUnder"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="DescriptionKey" value="IZYgunT1TradshotgunDoubleBarrelOverUnderDesc"/>
+	
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value=".45"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="TraderStageTemplate" value="baseTier1"/><!-- gunShotgunT2PumpShotgun -->
+	<property name="UnlockedBy" value="craftingShotguns"/><!-- gunShotgunT2PumpShotgunSchematic, -->
+	<property name="ShowQuality" value="true"/>
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="shotgun_polymer_grab"/>
+	<property name="SoundPlace" value="shotgun_polymer_place"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,ammoShotgunShellPremium"/>
+		<property name="Reload_time" value="2.6"/>
+		<property name="Sound_start" value="OverUnderSG_fire"/>
+		<property name="Sound_repeat" value="OverUnderSG_fire"/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="AutoReload" value="false"/>
+		<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+		<property name="ScopeOffset" value="-.00062,.088,.065"/>
+		<property name="SideOffset" value="0,0,0"/>
+		<property name="BarrelOffset" value="0,0,0"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+		<property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+		<property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+		<property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+		<property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="SightsCameraOffset" value="0,.0288,-.007"/>
+		<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+		<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+	</property>
+	
+	<effect_group name="gunShotgunT1DoubleBarrel">
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="180" tags="perkBoomstick"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="2" tags="perkBoomstick"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.2" tags="perkBoomstick"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".08" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="4" tags="perkBoomstick"/> <!-- damage offset -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.02,.02" tags="perkBoomstick"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".05,.25" tier="2,6" tags="perkBoomstick"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.08,.08" tags="perkBoomstick"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkBoomstick"/> <!-- tier bonus -->
+		<!-- <passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tier="1,6" tags="perkBoomstick"/> --> <!-- random DegMax -->
+		<!-- <passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkBoomstick"/> --> <!-- random APM -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkBoomstick"/> <!-- random WeaponHandling -->
+
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="4" tags="perkBoomstick"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4.4" tags="perkBoomstick"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-2.5" tags="perkBoomstick"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="2.5" tags="perkBoomstick"/>
+
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkBoomstick"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="1.7" tags="perkBoomstick"/>
+
+		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6" tags="perkBoomstick"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkBoomstick"/>
+		<display_value name="dStatStunEffect" value="4"/>
+		
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+		
+								<!--	Muzzle Tracer tail -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzle_TRACER_C">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzle_TRACER_C">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzle_TRACER_C"/>
+		
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+		
+						<!--	MuzzleFlash FPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
+						<!--	MuzzleLightFPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
+		
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+		<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" transform_path="body"/>
+		<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" transform_path="body"/>
+		<triggered_effect trigger="onSelfCrouch" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfCrouch" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+
+</item>
+
+<item name="IZYgunT3TACshotgunM1014">
+	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,holdBreathAiming,gun,shortRange,shotgun,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
+	<property name="DisplayType" value="rangedShotgun"/>
+	<property name="HoldType" value="30"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?IZY_Shotgun_M4ter.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?DROP_Shotgun_M4ter.Prefab"/>
+	<property name="Material" value="MShotgunParts"/>
+	<property name="Weight" value="4"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="CustomIcon" value="IZYgunT3TACshotgunM1014"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="DescriptionKey" value="IZYgunT3TACshotgunM1014Desc"/>
+	
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value=".45"/>
+	<property name="EconomicValue" value="5500"/>
+	<property name="TraderStageTemplate" value="baseTier3"/><!-- gunShotgunT2PumpShotgun -->
+	<property name="UnlockedBy" value="craftingShotguns"/><!-- gunShotgunT2PumpShotgunSchematic, -->
+	<property name="ShowQuality" value="true"/>
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="shotgun_polymer_grab"/>
+	<property name="SoundPlace" value="shotgun_polymer_place"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,ammoShotgunShellPremium"/>
+		<property name="Reload_time" value="2.6"/>
+		<property name="Sound_start" value="M1014A1_fire"/>
+		<property name="Sound_repeat" value="M1014A1_fire"/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="AutoReload" value="false"/>
+		<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+		<property name="ScopeOffset" value="-.00062,.088,.065"/>
+		<property name="SideOffset" value="0,0,0"/>
+		<property name="BarrelOffset" value="0,0,0"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+		<property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+		<property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+		<property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+		<property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="SightsCameraOffset" value=".0062,.05,.25"/>
+		<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+		<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+	</property>
+	
+	<effect_group name="gunShotgunT3AutoShotgun">
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="180" tags="perkBoomstick"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="8" tags="perkBoomstick"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 2.3s -->
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="15" tags="perkBoomstick"/> <!-- damage offset -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.02,.02" tags="perkBoomstick"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".05,.25" tier="2,6" tags="perkBoomstick"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.08,.08" tags="perkBoomstick"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkBoomstick"/> <!-- tier bonus -->
+		<!-- <passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tier="1,6" tags="perkBoomstick"/> --> <!-- random DegMax -->
+		<!-- <passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkBoomstick"/> --> <!-- random APM -->
+		<!-- <passive_effect name="MagazineSize" operation="perc_add" value="-.122,.24"/> --> <!-- random MagazineSize -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.085,.085" tags="perkBoomstick"/> <!-- random WeaponHandling -->
+
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2.8" tags="perkBoomstick"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="3.6" tags="perkBoomstick"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1.5" tags="perkBoomstick"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1.5" tags="perkBoomstick"/>
+
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkBoomstick"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="1.9" tags="perkBoomstick"/>
+
+		<passive_effect name="DegradationMax" operation="base_set" value="800,1200" tier="1,6" tags="perkBoomstick"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkBoomstick"/>
+		<display_value name="dStatStunEffect" value="4"/>
+		
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+		
+								<!--	Muzzle Tracer tail -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzle_TRACER_C">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzle_TRACER_C">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzle_TRACER_C"/>
+		
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+		
+						<!--	MuzzleFlash FPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
+						<!--	MuzzleLightFPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
+		
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+		<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfRun" action="SetTransformActive" active="false" transform_path="body"/>
+		<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" transform_path="body"/>
+		<triggered_effect trigger="onSelfCrouch" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfCrouch" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	
+</item>
+
+</append>
+</configs>

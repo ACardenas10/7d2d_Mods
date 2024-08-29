@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<append xpath="/Sounds">
+
+<SoundDataNode name="OverUnderSG_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="120" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?OverUnderSG_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="40"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+
+<SoundDataNode name="M1014A1_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="120" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?M1014A1_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="40"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="M1014A1_silen_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="120" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_Shotgun_Pack_MainResource.unity3d?M1014A1_silen_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="40"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+</append>
+
+</configs>

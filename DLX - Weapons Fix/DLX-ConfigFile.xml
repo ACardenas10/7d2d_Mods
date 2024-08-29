@@ -1,0 +1,743 @@
+<DLX_WeaponsFix_Settings>
+
+	<GlobalSettings>	
+		<GlobalSetting name="ScopeDirt" value="true" />
+		<GlobalSetting name="Match_ScopeColor_Tint" value="false" />
+		
+		<GlobalSetting name="AimDispersion_Still" value="true, 1, 0.75, -1, -1, 0, 0, 20" />
+		<GlobalSetting name="AimDispersion_Move" value="true, 2.75, 2.75, 0, 15, 0.03, 0.0225, 1.5" /> 
+	
+		<GlobalSetting name = "Position_Vector"		value = " 0.5  , -0.75 ,  2.5  " />
+		<GlobalSetting name = "Position_Vector_min" value = "-0.004, -0.004, -0.013" />
+		<GlobalSetting name = "Position_Vector_max" value = " 0.004,  0.004,  0.013" />
+		<GlobalSetting name = "Position_Velocity" 	value = " 0.5 " />
+		<GlobalSetting name = "Rotation_Vector" 	value = "-2   , -1   , 0" />
+		<GlobalSetting name = "Rotation_Vector_min" value = "-0.45, -0.35, 0" />
+		<GlobalSetting name = "Rotation_Vector_max" value = " 0.45,  0.35, 0" />
+		<GlobalSetting name = "Rotation_Velocity" 	value = " 1.5 " />
+		<GlobalSetting name = "MovementIncreaser" 	value = " 0.62" />
+	
+	</GlobalSettings>
+
+	<GunSettings>
+	
+	
+	<!-- PIPE PISTOL -->
+		<GunSetting GunName="gunHandgunT0PipePistol">
+			<parameter name="CameraDistance" value="0, -0.005, -0.05"/>
+			<parameter name="AllertParameters" value="0.05, -0.09, -0.06,   -2.5, 0, -15,   0, 1,   1, 0.25"/>
+			<parameter name="RunningParameters" value="-0.1, -0.1, 0.075,   -0.1, -0.1, 0.075,   -20, 30, 0,   -20, 30, 0,   0.3" />	
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value="GunSlide"/>
+			<parameter name="WeaponAngleCorrection" value="0.04425, 0, 0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>	
+			<parameter name="IRONSIGHT_Sway" value="0.3, 0.3, 1, 1"/>
+		
+			<parameter name="2X_FOV" value="12.53, 12.53"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.07499904"/>
+			<parameter name="2X_Sway" value="3.25, 3.75, 0.5, 0.3"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 2"/>
+			<parameter name="2X_Offset_Reticle" value="-1.8, 3.3, -1.8, 3.3"/>
+			<parameter name="2X_Kick_Shoot" value="0, 0, 0"/>
+			<parameter name="2X_Kick_Aim" value="0.05"/>
+	
+			<parameter name="4X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Size" value="2.22"/>		<!-- not used -->
+			<parameter name="4X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="4X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="4X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="4X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="4X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="4X_Kick_Aim" value="0"/>				<!-- not used -->
+	
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->	
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->	
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->	
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->			
+		</GunSetting>
+	
+	
+	<!-- PISTOL -->
+		<GunSetting GunName="gunHandgunT1Pistol">
+			<parameter name="CameraDistance" value="0, -0.030, -0.075"/>
+			<parameter name="AllertParameters" value="-0.013, -0.065, -0.01,   1.7, 2.5, -10,   0, 0.85,   0.85, 0.3"/> 
+			<parameter name="RunningParameters" value="-0.1, -0.1, 0.075,   -0.1, -0.1, 0.075,   -20, 30, 0,   -20, 30, 0,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value="GunSlide_Reload"/>
+			<parameter name="WeaponAngleCorrection" value="0, 0, 0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>	
+			<parameter name="IRONSIGHT_Sway" value="0.8, 0.5, 1, 1"/>
+		
+			<parameter name="2X_FOV" value="12.6, 12.6"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.0684827"/>
+			<parameter name="2X_Sway" value="3.5, 3.25, 0.5, 0.4"/> 
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.9, 3.4, -1.9, 3.4"/>
+			<parameter name="2X_Kick_Shoot" value="0.3, -0.13, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0"/>
+	
+			<parameter name="4X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Size" value="2.22"/>		<!-- not used -->
+			<parameter name="4X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="4X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="4X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="4X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="4X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="4X_Kick_Aim" value="0"/>				<!-- not used -->
+	
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->	
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->	
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+		
+	<!-- MAGNUM -->
+		<GunSetting GunName="gunHandgunT2Magnum44">
+			<parameter name="CameraDistance" value="0,0,-0.055"/>
+			<parameter name="AllertParameters" value="-0.01, -0.046, -0.1,   1.15, 4.75, -10,   0, 0.8,   1, 0.2"/>
+			<parameter name="RunningParameters" value="-0.1, -0.1, 0.05,   -0.1, -0.1, 0.05,   -20, 30, 0,   -20, 30, 0,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="0.5,0,0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>	
+			<parameter name="IRONSIGHT_Sway" value="0.8, 0.5, 1, 1"/>
+		
+			<parameter name="2X_FOV" value="12.61, 12.61"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.0872894"/>
+			<parameter name="2X_Sway" value="5, 5, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.8, 3.2, -1.8, 3.2"/>
+			<parameter name="2X_Kick_Shoot" value="0.3, -0.13, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0"/>
+	
+			<parameter name="4X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Size" value="2.22"/>		<!-- not used -->
+			<parameter name="4X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="4X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="4X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="4X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="4X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="4X_Kick_Aim" value="0"/>				<!-- not used -->
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->	
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->	
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->	
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+	
+	<!-- DESERT VULTURE -->
+		<GunSetting GunName="gunHandgunT3DesertVulture">
+			<parameter name="CameraDistance" value="0, -0.022, -0.041"/>
+			<parameter name="AllertParameters" value="-0.013, -0.065, -0.01,   1.7, 2.5, -10,   0, 0.85,   0.85, 0.3"/> 
+			<parameter name="RunningParameters" value="-0.1, -0.1, 0.025,   -0.1, -0.1, 0.025,   -20, 30, 0,   -20, 30, 0,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="1, 0, 0"/>    
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>	
+			<parameter name="IRONSIGHT_Sway" value="0.5, 0.5, 1, 1"/>
+		
+			<parameter name="2X_FOV" value="12.65, 12.65"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08758373"/>
+			<parameter name="2X_Sway" value="6, 5.5, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.7, 3.1, -1.7, 3.1"/>
+			<parameter name="2X_Kick_Shoot" value="0.3, -0.14, 0.2"/>
+			<parameter name="2X_Kick_Aim" value="0"/>
+	
+			<parameter name="4X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Size" value="2.22"/>		<!-- not used -->
+			<parameter name="4X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="4X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="4X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="4X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="4X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="4X_Kick_Aim" value="0"/>				<!-- not used -->
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->	
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->	
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->	
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+		
+	<!-- SMG -->
+		<GunSetting GunName="gunHandgunT3SMG5">
+			<parameter name="CameraDistance" value="0,0,0"/>
+			<parameter name="AllertParameters" value="0, -0.074, 0.027,   2.256, -1.5, -15,   0, 1,   0.7, 0.25"/>
+			<parameter name="RunningParameters" value="-0.1, 0.025, 0.2,   -0.1, 0.05, 0.2,   10, 60, -20,   10, 60, -30,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="0,0,0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="60"/>	
+			<parameter name="IRONSIGHT_Sway" value="0.7, 0.5, 1, 1"/>
+		
+			<parameter name="2X_FOV" value="12.52, 12.52"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08757998"/>
+			<parameter name="2X_Sway" value="4.5, 4.5, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.8, 3.2, -1.8, 3.2"/>
+			<parameter name="2X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="2X_Kick_Aim" value="0"/>
+	
+			<parameter name="4X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>	<!-- not used -->
+			<parameter name="4X_Reticle_Size" value="2.22"/>		<!-- not used -->
+			<parameter name="4X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="4X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="4X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="4X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="4X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="4X_Kick_Aim" value="0"/>				<!-- not used -->
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->	
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+			
+	<!-- PIPE MACHINE GUN -->	
+		<GunSetting GunName="gunMGT0PipeMachineGun">
+			<parameter name="CameraDistance" value="0,0,0"/>
+			<parameter name="AllertParameters" value="-0.0296, -0.0675, 0.0274,   -0.7, 3.56, -10.04,   0.2, 0.8,   1, 0.2"/>
+			<parameter name="RunningParameters" value="-0.1, 0.025, 0.2,   -0.1, 0.075, 0.2,   10, 60, -20,   10, 60, -30,   0.3" />
+		
+			<parameter name="OriginalScopeName" value="scope_LOD0"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="0, 0, 0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="2, 2, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="12.44, 12.44"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08395886"/>
+			<parameter name="2X_Sway" value="4, 3.75, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.8, 3.2, -1.8, 3.2"/>		
+			<parameter name="2X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="2X_Kick_Aim" value="0.025"/>
+			
+			<parameter name="4X_FOV" value="16.46, 8.31"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06084109"/>
+			<parameter name="4X_Sway" value="4, 3.75, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-3.7, 6.5, -17.8, 31.5"/>
+			<parameter name="4X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="4X_Kick_Aim" value="0.025"/>
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->	
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->	
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->	
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+		
+	<!-- AK 47 -->	
+		<GunSetting GunName="gunMGT1AK47">
+			<parameter name="CameraDistance" value="0, -0.02,0"/>
+			<parameter name="AllertParameters" value="0.0011, -0.0675, 0.027,   0.2, -3.3, -15,   0, 1,   0.6, 0.25"/>
+			<parameter name="RunningParameters" value="-0.1, 0.05, 0.2,   -0.1, 0.075, 0.2,   10, 60, -20,   10, 60, -30,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="1.65, 0, 0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="60"/>	
+			<parameter name="IRONSIGHT_Sway" value="0.7, 0.4, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="13.0, 13.0"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08477687"/>
+			<parameter name="2X_Sway" value="2.5, 2, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.5, 2.6, -1.5, 2.6"/>	
+			<parameter name="2X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="2X_Kick_Aim" value="0.15"/>
+			
+			<parameter name="4X_FOV" value="17.57, 9.00"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06216692"/>
+			<parameter name="4X_Sway" value="2.5, 2, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.1, 3.8, -14.8, 26.1"/>
+			<parameter name="4X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="4X_Kick_Aim" value="0.15"/>
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->	
+		</GunSetting>
+		
+		
+	<!-- TACTICAL ASSAULT RIFLE -->	
+		<GunSetting GunName="gunMGT2TacticalAR">
+			<parameter name="CameraDistance" value="0,0,0"/>
+			<parameter name="AllertParameters" value="-0.0012, -0.0818, 0.027,   0.3, -0.8, -16,   0, 1,   0.6, 0.25"/>
+			<parameter name="RunningParameters" value="-0.1, 0.04, 0.2,   -0.1, 0.05, 0.2,   10, 60, -20,   10, 60, -30,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="0,0,0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="0.5, 0.5, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="13.0, 13.0"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08518357"/>
+			<parameter name="2X_Sway" value="3.75, 3.25, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.5, 2.6, -1.5, 2.6"/>	
+			<parameter name="2X_Kick_Shoot" value="0.4, -0.25, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="4X_FOV" value="17.57, 9.00"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.0624333"/>
+			<parameter name="4X_Sway" value="3.75, 3.25, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.1, 3.7, -14.29, 25.2"/>
+			<parameter name="4X_Kick_Shoot" value="0.4, -0.23, 0.3"/>
+			<parameter name="4X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->	
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+		
+	<!-- M60 -->	
+		<GunSetting GunName="gunMGT3M60">
+			<parameter name="CameraDistance" value="0,0,0"/>
+			<parameter name="AllertParameters" value="-0.0012, -0.0818, 0.027,   0.3, -0.8, -16,   0, 1,   0.6, 0.25"/>
+			<parameter name="RunningParameters" value="-0.1, 0.03, 0.2,   -0.1, 0.05, 0.2,   10, 60, -25,   10, 60, -30,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="scope_LOD0"/>
+			<parameter name="TransformParent" value="Cover"/>
+			<parameter name="WeaponAngleCorrection" value="0,0,0"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="1, 1, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="13.0, 13.0"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08545656"/>
+			<parameter name="2X_Sway" value="2.75, 2.25, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.5, 2.6, -1.5, 2.6"/>	
+			<parameter name="2X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="2X_Kick_Aim" value="0.1"/>
+			
+			<parameter name="4X_FOV" value="17.57, 9.00"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06244833"/>
+			<parameter name="4X_Sway" value="2.75, 2.25, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.1, 3.7, -14.25, 24.5"/>
+			<parameter name="4X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="4X_Kick_Aim" value="0.125"/>
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->	
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+		
+	<!-- PIPE RIFLE -->	
+		<GunSetting GunName="gunRifleT0PipeRifle">
+			<parameter name="CameraDistance" value="0,0,0"/>
+			<parameter name="AllertParameters" value="0.0489, -0.0731, 0.027,   1.37, -3.9, -20.5,   0, 1,   0.8, 0.35"/>
+			<parameter name="RunningParameters" value="-0.1, 0.02, 0.2,   -0.1, 0.02, 0.2,   10, 60, -20,   10, 60, -20,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value="GunSlide"/>
+			<parameter name="WeaponAngleCorrection" value="0.0001397729, 6.103516E-05, 6.623478E-05"/>    
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="0.5, 0.5, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="12.87, 12.87"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08694416"/>
+			<parameter name="2X_Sway" value="6, 5, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.5, 2.7, -1.5, 2.7"/>	
+			<parameter name="2X_Kick_Shoot" value="0.4, -0.24, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0"/>
+	
+			<parameter name="4X_FOV" value="17.47, 8.52"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06414246"/>
+			<parameter name="4X_Sway" value="6, 5, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.1, 3.7, -14.8, 26.1"/>
+			<parameter name="4X_Kick_Shoot" value="0.4, -0.24, 0.3"/>
+			<parameter name="4X_Kick_Aim" value="0"/>
+			
+			<parameter name="8X_FOV" value="11.83, 5.99"/>
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>			
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>
+			<parameter name="8X_Reticle_Size" value="1.52"/>
+			<parameter name="8X_WCT_Distance" value="0.04344982"/>
+			<parameter name="8X_Sway" value="3, 2.5, 0.5, 0.4"/>
+			<parameter name="8X_Offset_Light" value="1.2, -1.2, 1"/>
+			<parameter name="8X_Offset_Reticle" value="-24.6, 43.2, -60, 104.5"/>	
+			<parameter name="8X_Kick_Shoot" value="0.4, -0.24, 0.5"/>
+			<parameter name="8X_Kick_Aim" value="0"/>				
+		</GunSetting>
+		
+		
+	<!-- HUNTING RIFLE -->	
+		<GunSetting GunName="gunRifleT1HuntingRifle">
+			<parameter name="CameraDistance" value="0,0,0.05"/>
+			<parameter name="AllertParameters" value="0.01, -0.074, 0.027,   0.08, -1.5, -20.5,   0, 1,   0.7, 0.35"/>
+			<parameter name="RunningParameters" value="-0.1, 0.03, 0.2,   -0.1, 0.05, 0.2,   10, 60, -20,   10, 60, -30,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="0,0,0"/>    
+			
+			<parameter name="IRONSIGHT_FOV" value="60"/>
+			<parameter name="IRONSIGHT_Sway" value="0.75, 0.5, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="12.87, 12.87"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08703845"/>
+			<parameter name="2X_Sway" value="3, 2.4, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.5, 2.7, -1.5, 2.7"/>	
+			<parameter name="2X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0.1"/>
+			
+			<parameter name="4X_FOV" value="17.47, 8.52"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.0636413"/>
+			<parameter name="4X_Sway" value="3, 2.4, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.1, 3.7, -15.5, 27.7"/>
+			<parameter name="4X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="4X_Kick_Aim" value="0.125"/>
+			
+			<parameter name="8X_FOV" value="11.83, 5.99"/>
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>			
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>
+			<parameter name="8X_Reticle_Size" value="1.52"/>
+			<parameter name="8X_WCT_Distance" value="0.04352593"/>
+			<parameter name="8X_Sway" value="1.5, 1.2, 0.5, 0.4"/>
+			<parameter name="8X_Offset_Light" value="1.2, -1.2, 1"/>
+			<parameter name="8X_Offset_Reticle" value="-24.5, 44, -64, 111.5"/>	
+			<parameter name="8X_Kick_Shoot" value="0.2, -0.2, 0.3"/>	
+			<parameter name="8X_Kick_Aim" value="0.1"/>			
+		</GunSetting>
+		
+		
+	<!-- LEVER ACTION RIFLE -->	
+		<GunSetting GunName="gunRifleT2LeverActionRifle">
+			<parameter name="CameraDistance" value="0,0,0.0"/>
+			<parameter name="AllertParameters" value="-0.009, -0.0725, 0.027,   0.42, -0.5, -20.5,   0, 1,   0.7, 0.35"/>
+			<parameter name="RunningParameters" value="-0.1, 0.03, 0.2,   -0.1, 0.05, 0.2,   10, 60, -20,   10, 60, -30,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="Scope_numb"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="8.961871E-05, 6.103516E-05, 0.0001168987"/>
+			
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="0.5, 0.3, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="13, 13"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08535302"/>
+			<parameter name="2X_Sway" value="3.75, 3.2, 0.5, 0.4"/>		
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.5, 2.7, -1.5, 2.7"/>	
+			<parameter name="2X_Kick_Shoot" value="0.4, -0.22, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="4X_FOV" value="17.78, 8.85"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06236029"/>
+			<parameter name="4X_Sway" value="3.75, 3.2, 0.5, 0.4"/>		
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-1.9, 3.4, -14.9, 26.5"/>
+			<parameter name="4X_Kick_Shoot" value="0.4, -0.22, 0.3"/>
+			<parameter name="4X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="8X_FOV" value="12.17, 6"/>
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>			
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>
+			<parameter name="8X_Reticle_Size" value="1.52"/>
+			<parameter name="8X_WCT_Distance" value="0.04455602"/>	
+			<parameter name="8X_Sway" value="1.9, 1.6, 0.5, 0.4"/>		
+			<parameter name="8X_Offset_Light" value="1.2, -1.2, 1"/>
+			<parameter name="8X_Offset_Reticle" value="-24, 43, -66.4, 116.3"/>
+			<parameter name="8X_Kick_Shoot" value="0.4, -0.22, 0.3"/>
+			<parameter name="8X_Kick_Aim" value="0.03"/>
+		</GunSetting>
+
+
+	<!-- SNIPER RIFLE -->
+		<GunSetting GunName="gunRifleT3SniperRifle">
+			<parameter name="CameraDistance" value="0,0,0"/>
+			<parameter name="AllertParameters" value="0.0035, -0.067, 0.027,   1.9, -1.3, -20.5,   0, 1,   0.7, 0.35"/>
+			<parameter name="RunningParameters" value="-0.1, 0.04, 0.2,   -0.1, 0.06, 0.2,   10, 60, -20,   10, 60, -20,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="scope_LOD0"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="-358.4999, 9.155273E-05, 3.422709E-05"/>
+
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="1, 0.5, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="13.49, 13.49"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08278"/>
+			<parameter name="2X_Sway" value="3.85, 3.25, 0.5, 0.4"/>	
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.2, 2, -1.15, 2"/>			
+			<parameter name="2X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="4X_FOV" value="18.23, 9.19"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.05998"/>
+			<parameter name="4X_Sway" value="3.85, 3.25, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-1.6, 2.7, -13.7, 24"/>			
+			<parameter name="4X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="4X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="8X_FOV" value="12.62, 6.33"/>
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>			
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>
+			<parameter name="8X_Reticle_Size" value="1.52"/>
+			<parameter name="8X_WCT_Distance" value="0.04218"/>
+			<parameter name="8X_Sway" value="2, 3, 0.5, 0.4"/>		
+			<parameter name="8X_Offset_Light" value="1.2, -1.2, 1"/>
+			<parameter name="8X_Offset_Reticle" value="-22.8, 40.6, -62, 108.7"/>	
+			<parameter name="8X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="8X_Kick_Aim" value="0.03"/>			
+		</GunSetting>
+
+
+	<!-- IRON CROSSBOW -->
+		<GunSetting GunName="gunBowT1IronCrossbow">
+			<parameter name="CameraDistance" value="0, 0, -0.15"/> 
+			<parameter name="AllertParameters" value="0.042, -0.085, 0.051,   2.43, 6.1, -17,   0, 0.9,   0.8, 0.2"/>
+			<parameter name="RunningParameters" value="-0.06, 0.03, 0.2,   -0.06, 0.03, 0.2,   10, 60, -20,   10, 60, -20,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="scope_LOD0"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="-8.821487E-06, 0, 0"/>
+
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="0.5, 0.5, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="12.80, 12.80"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08515538"/>
+			<parameter name="2X_Sway" value="3, 2.6, 0.5, 0.4"/>
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.6, 2.9, -1.6, 2.9"/>			
+			<parameter name="2X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="2X_Kick_Aim" value="0.15"/>
+			
+			<parameter name="4X_FOV" value="17.07, 8.49"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06252701"/>
+			<parameter name="4X_Sway" value="3, 2.6, 0.5, 0.4"/>		
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.4, 4.4, -16, 28"/>				
+			<parameter name="4X_Kick_Shoot" value="0,0,0"/>
+			<parameter name="4X_Kick_Aim" value="0.1"/>
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->
+			<parameter name="8X_Offset_Light" value="0,0,0"/>		<!-- not used -->
+			<parameter name="8X_Offset_Reticle" value="0,0,0,0"/>	<!-- not used -->
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+		
+	<!-- COMPOUND CROSSBOW -->
+		<GunSetting GunName="gunBowT3CompoundCrossbow">
+			<parameter name="CameraDistance" value="0, -0.016, -0.321"/>
+			<parameter name="AllertParameters" value="0.011, -0.082, 0.07,   -4, -1, -20.5,   0, 1,   0.85, 0.35"/>
+			<parameter name="RunningParameters" value="-0.06, 0.03, 0.2,   -0.06, 0.03, 0.2,   10, 60, -20,   10, 60, -25,   0.3" />
+			
+			<parameter name="OriginalScopeName" value="scope_LOD0"/>
+			<parameter name="TransformParent" value=""/>
+			<parameter name="WeaponAngleCorrection" value="-0.06801271, 0, 0"/>
+
+			<parameter name="IRONSIGHT_FOV" value="45"/>
+			<parameter name="IRONSIGHT_Sway" value="1.25, 1, 1, 1"/>
+			
+			<parameter name="2X_FOV" value="12.88, 12.88"/>
+			<parameter name="2X_Reticle_Shape" value="Reticle_00"/>
+			<parameter name="2X_Reticle_Color" value="255, 255, 255"/>
+			<parameter name="2X_Reticle_Size" value="3.03"/>
+			<parameter name="2X_WCT_Distance" value="0.08495034"/>
+			<parameter name="2X_Sway" value="3.5, 3, 0.5, 0.4"/>	
+			<parameter name="2X_Offset_Light" value="0.5, -0.5, 1"/>
+			<parameter name="2X_Offset_Reticle" value="-1.6, 2.8, -1.6, 2.8"/>				
+			<parameter name="2X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="2X_Kick_Aim" value="0.05"/>
+			
+			<parameter name="4X_FOV" value="17.50, 8.53"/>
+			<parameter name="4X_Reticle_Shape" value="Reticle_02"/>
+			<parameter name="4X_Reticle_Color" value="255, 0, 0"/>
+			<parameter name="4X_Reticle_Size" value="2.22"/>
+			<parameter name="4X_WCT_Distance" value="0.06226308"/>
+			<parameter name="4X_Sway" value="3.5, 3, 0.5, 0.4"/>	
+			<parameter name="4X_Offset_Light" value="0.7, -0.7, 1"/>
+			<parameter name="4X_Offset_Reticle" value="-2.1, 3.7, -15.8, 28.1"/>			
+			<parameter name="4X_Kick_Shoot" value="0.2, -0.2, 0.3"/>
+			<parameter name="4X_Kick_Aim" value="0.06"/>
+			
+			<parameter name="8X_FOV" value="10.0, 10.0"/>			<!-- not used -->
+			<parameter name="8X_Reticle_Shape" value="Reticle_06"/>	<!-- not used -->		
+			<parameter name="8X_Reticle_Color" value="0, 0, 0, 0"/>	<!-- not used -->
+			<parameter name="8X_Reticle_Size" value="1.52"/>		<!-- not used -->
+			<parameter name="8X_WCT_Distance" value="0.05"/>		<!-- not used -->
+			<parameter name="8X_Sway" value="0, 0, 0, 0"/>			<!-- not used -->	
+			<parameter name="8X_Kick_Shoot" value="0, 0, 0"/>		<!-- not used -->
+			<parameter name="8X_Kick_Aim" value="0"/>				<!-- not used -->
+		</GunSetting>
+		
+	</GunSettings>
+</DLX_WeaponsFix_Settings>
