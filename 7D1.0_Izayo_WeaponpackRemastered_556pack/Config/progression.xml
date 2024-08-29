@@ -1,0 +1,22 @@
+<configs>
+								<!-- Chonky's code -->
+								
+		<!-- T2 AR CARBINE -->
+				<!-- T2 CAR15 -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/display_entry[@item='gunMGT2TacticalAR']">
+		<unlock_entry item="IZYgunT2ARCabineCAR15" unlock_tier="1" tags="IZYgunT2ARCabineCAR15"/>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="IZYgunT2ARCabineCAR15"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="32,39,46,53,60,100" value="1,2,3,4,5,5" tags="IZYgunT2ARCabineCAR15"/>
+	</append>
+		<!-- T3 AR CARBINE -->
+				<!-- T3 M4 -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/display_entry[@item='gunMGT3M60']">
+		<unlock_entry item="IZYgunT3ARCabineM4Carbine" unlock_tier="1" tags="IZYgunT3ARCabineM4Carbine"/>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="IZYgunT3ARCabineM4Carbine"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="IZYgunT3ARCabineM4Carbine"/>
+	</append>
+</configs>	

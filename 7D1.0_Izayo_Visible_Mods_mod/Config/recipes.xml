@@ -1,0 +1,21 @@
+<addnew>
+
+	<append xpath="/recipes">
+	
+		<!--	***************************	-->
+				<!--	HOLDSTYLE_PISTOL   -->
+		<!--	***************************	-->
+	
+		<recipe name="IZYmodPistolHoldstyle01" count="1">
+			<ingredient name="resourcePaper" count="5"/>
+		</recipe>
+		
+		<recipe name="IZYmodPistolHoldstyle02" count="1">
+			<ingredient name="resourcePaper" count="5"/>
+		</recipe>
+	
+
+	</append>
+
+
+</addnew>

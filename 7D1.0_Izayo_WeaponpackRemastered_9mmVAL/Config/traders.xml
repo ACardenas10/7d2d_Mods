@@ -1,0 +1,10 @@
+<configs>
+
+		<!--	GUN_TRADER	-->
+		
+	<append xpath="//trader_item_group[@name='groupRangedAll']">
+		<item name="IZYgunT0SMGPIPEsubmachinegun" quality="1,5"/>
+		<item name="IZYgunT2SMGUZIsubmachinegun" quality="1,5"/>
+	</append>
+
+</configs>	

@@ -1,0 +1,32 @@
+<configs>
+
+					<!-- Chonky's code-->
+
+			<!-- Sniper R -->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/display_entry[@item='gunRifleT1HuntingRifle']">
+	<unlock_entry item="IZYgunT1SNIPERRIFLE762Mosinnagant" unlock_tier="1" tags="IZYgunT1SNIPERRIFLE762Mosinnagant"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="IZYgunT1SNIPERRIFLE762Mosinnagant"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,25,100" value="1,2,3,4,5,5" tags="IZYgunT1SNIPERRIFLE762Mosinnagant"/>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/display_entry[@item='gunRifleT2LeverActionRifle']">
+	<unlock_entry item="IZYgunT2SNIPERRIFLE762M1garandNavyconverted" unlock_tier="1" tags="IZYgunT2SNIPERRIFLE762M1garandNavyconverted"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="IZYgunT2SNIPERRIFLE762M1garandNavyconverted"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="32,39,46,53,60,100" value="1,2,3,4,5,5" tags="IZYgunT2SNIPERRIFLE762M1garandNavyconverted"/>
+</append>
+				<!-- Assault rifle 762 -->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/display_entry[@item='gunMGT1AK47']">
+	<unlock_entry item="IZYgunT1ARSTG44N" unlock_tier="1" tags="IZYgunT1ARSTG44N"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="IZYgunT1ARSTG44N"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,25,100" value="1,2,3,4,5,5" tags="IZYgunT1ARSTG44N"/>
+</append>
+
+<!-- -->
+
+</configs>	

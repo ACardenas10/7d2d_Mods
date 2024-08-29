@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addnew>
+
+		<!--	Longbarrel		-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">
+			
+	</append>
+
+		<!--	MAGAZINE-DRUM 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">
+			
+	</append>
+
+		<!--	MAGAZINE-EXT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
+
+		
+	</append>
+
+			<!--	FORGRIP 	-->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
+		
+
+		
+	</append>
+
+		<!--	RET-STOCK 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']">
+	
+			
+	</append>
+
+		<!--	FLASHLIGHT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+	
+			
+	</append>
+
+		<!--	LASER   	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+	
+			
+	</append>
+
+		<!--	REFLEXSIGHT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+
+		<!--	45Pistols 	-->
+		<item_property_overrides name="IZYgunT1Pistol45M1917">
+			<property name="ScopeCameraOffset" value="-.0018,.0205,-.01"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
+			<property name="ScopeCameraOffset" value="-.00218,-.0055,.006"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		<!--	45SMG 	-->
+		<item_property_overrides name="IZYgunT445SMGM1928thompson">
+			<property name="ScopeCameraOffset" value=".0002,-.029,.15"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		<!--	TAC-SMG 	-->
+			
+		
+	</append>
+	
+		<!--	2XSCOPE	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<!--	45Pistols 	-->
+		<item_property_overrides name="IZYgunT1Pistol45M1917">
+			<property name="ScopeCameraOffset" value="-.0017,.0166,-.18"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
+			<property name="ScopeCameraOffset" value="-.00218,-.0057,-.09"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+			<!--	TRA-smg	-->
+		<item_property_overrides name="IZYgunT445SMGM1928thompson">
+			<property name="ScopeCameraOffset" value=".0002,-.0176,.15"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+		</item_property_overrides>
+			<!--	TAC-PISTOL	-->
+			
+		
+	</append>
+	
+		<!--	Silencer 	-->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+
+		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
+			<property name="Sound_start" value="M1911A1_silen_fire"/>
+			<property name="Sound_loop" value="M1911A1_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT1Pistol45M1917">
+			<property name="Sound_start" value="M1911A1_silen_fire"/>
+			<property name="Sound_loop" value="M1911A1_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT445SMGM1928thompson">
+			<property name="Sound_start" value="M1928D_silen_fire"/>
+			<property name="Sound_loop" value="M1928D_silen_fire"/>
+		</item_property_overrides>
+	
+	</append>
+	
+			<!--	HOLD_STYLE 1	-->
+	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle01']">
+	
+		<item_property_overrides name="IZYgunT1Pistol45M1917">
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1917_Holdstyle_01.Prefab"/>
+		</item_property_overrides>
+	
+		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1_Holdstyle_01.Prefab"/>
+		</item_property_overrides>
+		
+	</append>
+	
+			<!--	HOLD_STYLE 2	-->
+	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle02']">
+	
+		<item_property_overrides name="IZYgunT1Pistol45M1917"> <!--	 type 2 will add later	-->
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1917_Holdstyle_02.Prefab"/>
+		</item_property_overrides>
+	
+		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1_Holdstyle_02.Prefab"/>
+		</item_property_overrides>
+		
+	</append>
+	
+</addnew>

@@ -1,0 +1,8 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+IZYgunT1SNIPERRIFLE762Mosinnagant,items,gun,,Mosin Nagant (T1),Mosin Nagant (T1),,,,,,,,,,,,,,
+IZYgunT1SNIPERRIFLE762MosinnagantDesc,items,gun,,,A famous Russian made rifle.\n Chambered in 7.62×54R.\nRepair with a - Repair Kit.\nScrap to - Rifle parts.,,,,,,,,,,,,,,,
+IZYgunT2SNIPERRIFLE762M1garandNavyconverted,items,gun,,M1N Reserve Rifle(T2),M1N Reserve Rifle(T2),,,,,,,,,,,,,,
+IZYgunT2SNIPERRIFLE762M1garandNavyconvertedDesc,items,gun,,,A Legendary U.S. Service Rifle.\n Re-Chambered in 7.62×51.\n For Reserve Usage. \nRepair with a - Repair Kit.\nScrap to - Rifle parts.\n Can take Extended Magazine Mod.,,,,,,,,,,,,,
+IZYgunT1ARSTG44N,items,gun,,Sturm Rifle (T1),Sturm Rifle (T1),,,,,,,,,,,,,,
+IIZYgunT1ARSTG44NDesc,items,gun,,,A german WW2 first Assault Rifle.\nConverted to use 7.62×39mm .\n.\nRepair with a - Repair Kit.\nScrap to - Rifle parts.\n.,,,,,,,,,,,,,

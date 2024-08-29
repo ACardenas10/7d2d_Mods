@@ -1,0 +1,289 @@
+<configs>
+
+				<!--	BUFF THAT MAKE GLOVES VISIBLE	    -->
+
+
+
+	<append xpath="/buffs">
+
+		<buff name="IZYGlovesEffect" hidden="true" icon="ui_game_symbol_lightbulb" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="IsFPV"/>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="body"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+	
+		<buff name="RefreshHand" hidden="false">
+			<stack_type value="ignore"/>
+			<duration value="0.001"/>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				
+				<!--	Only Refresh when you don't have an armor buff	   -->
+				<requirement name="!HasBuff" buff="WearingArmorMilitaryGrey"/>
+				<requirement name="!HasBuff" buff="WearingArmorClothTan"/>
+				<requirement name="!HasBuff" buff="WearingArmorLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorLeatherIron"/>
+				<requirement name="!HasBuff" buff="WearingArmorSteel"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<!--	Only Refresh when you don't have an armor buff	   -->
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+			</effect_group>
+		</buff>
+	
+		<buff name="WearingArmorMilitaryGrey" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> <!--SHOW-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> <!--RE01-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> <!--RE02-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> <!--RE03-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_IZY_ClothTan_Gloves_BASE"/> <!--RE04-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> <!--RE05-->
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				
+				<!--	Remove Extra parts	  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="WearingArmorClothTan" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/> <!--SHOW-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> <!--RE01-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> <!--RE02-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> <!--RE03-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> <!--RE04-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> <!--RE05-->
+				<!--	Remove Extra parts	  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="WearingArmorLeather" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> <!--SHOW-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> <!--RE01-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> <!--RE02-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> <!--RE03-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/> <!--RE04-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> <!--RE05-->
+				<!--	Remove Extra parts	  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="WearingArmorLeatherIron" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> <!--SHOW-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> <!--RE01-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> <!--RE02-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/> <!--RE03-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> <!--RE04-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> <!--RE05-->
+				<!--	SteelGlove Gauntlets	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				<!--	Remove Extra parts	  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="WearingArmorBlackLeather" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> <!--SHOW-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> <!--RE01-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> <!--RE02-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/> <!--RE03-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> <!--RE04-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> <!--RE05-->
+				<!--	Remove Extra parts	  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="WearingArmorSteel" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/> <!--SHOW-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_MilitaryGREY_Gloves_BASE"/> <!--RE01-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Iron_Gloves_BASE"/> <!--RE02-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_ClothTan_Gloves_BASE"/> <!--RE03-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Leather_Gloves_BASE"/> <!--RE04-->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Cloth_Gloves_BASE"/> <!--RE05-->
+				<!--	SteelGlove Gauntlets	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<!--	Remove Extra parts	  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IronGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MilGloveGrey_part002"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_Steel_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part001"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="SteelGlove_part002"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+		</buff>
+
+	</append>
+	
+	<append xpath="//buff[@name='buffStatusCheck01']">	
+		<effect_group>
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="IZYGlovesEffect"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfWalk" action="AddBuff" buff="IZYGlovesEffect"/>
+		</effect_group>
+	</append>
+
+</configs>

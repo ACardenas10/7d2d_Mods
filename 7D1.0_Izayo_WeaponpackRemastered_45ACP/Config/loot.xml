@@ -1,0 +1,97 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT1_Gunslinger']">
+					<!-- tier 01  -->
+		<lootgroup name="groupWeaponsT1_PISTOL45_M1917" count="all" loot_quality_template="QLTemplateT1">
+			<item name="IZYgunT1Pistol45M1917"/>
+		</lootgroup>
+	</insertAfter>
+	
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT2_Gunslinger']">
+					<!-- tier 02  -->
+		<lootgroup name="groupWeaponsT2_PISTOL45_M1911" count="all" loot_quality_template="QLTemplateT2">
+			<item name="IZYgunT2Pistol45M1911A1"/>
+		</lootgroup>
+	</insertAfter>
+	
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT3_Machinegunner']">
+					<!-- tier 03  -->
+		<lootgroup name="groupWeaponsT4_SMG_M1928Thompson" count="all" loot_quality_template="QLTemplateT3">
+			<item name="IZYgunT445SMGM1928thompson"/>
+		</lootgroup>
+	</insertAfter>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+		<!-- Adding new weapon groups to loot groups  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT1_Ranged']">	
+		<item group="groupWeaponsT1_PISTOL45_M1917"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT2_Ranged']">	
+		<item group="groupWeaponsT2_PISTOL45_M1911"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT3_Ranged']">	
+		<item group="groupWeaponsT3_Machinegunner"/>
+	</append>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+				<!-- QUEST REWARD 45ACP GUN  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT1']">	
+		<item name="IZYgunT1Pistol45M1917"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT2']">	
+		<item name="IZYgunT2Pistol45M1911A1"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT3']">	
+		<item name="IZYgunT445SMGM1928thompson"/>
+	</append>
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+					<!-- create AMMO GROUP  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+
+	<insertAfter xpath="//lootgroup[@name='group9mmSmall']">
+		<lootgroup name="group45ammoSmall">
+			<item name="ammo45ACPBulletBall" count="5,6" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+		
+		<lootgroup name="group45ammoMedium">
+			<item name="ammo45ACPBulletBall" count="9,18" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+		
+		<lootgroup name="group45ammoLarge">
+			<item name="ammo45ACPBulletBall" count="22,32" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+	</insertAfter>
+	
+				<!-- Add Ammogroup TO loot  -->
+
+	<append xpath="//lootgroup[@name='groupAmmoSmall']">	
+		<item group="group45ammoSmall"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupAmmoSmallNoArrow']">	
+		<item group="group45ammoSmall"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupAmmoMedium']">	
+		<item group="group45ammoMedium"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupAmmoMediumNoArrow']">	
+		<item group="group45ammoMedium"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupAmmoLarge']">	
+		<item group="group45ammoLarge"/>
+	</append>
+
+</configs>

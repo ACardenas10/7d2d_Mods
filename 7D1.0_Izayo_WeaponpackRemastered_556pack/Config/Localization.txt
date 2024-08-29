@@ -1,0 +1,12 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+ammo556mmBulletBall,items,gun,,5.56x45mm.,5.56x45mm.,,,,,,,,,,,,,,
+ammo556mmBulletBallDesc,items,gun,,,A light rifle caliber.\nVery effective against armor opponent.\nDue to it high-velocity.\nIt can penetrate 1 entity (Zombie) by default.,,,,,,,,,,,,,,,
+ammo556mmHIpower,items,gun,,5.56x45mm HP.,5.56x45mm High-Power.,,,,,,,,,,,,,,
+ammo556mmHIpowerDesc,items,gun,,,A light rifle caliber with extra amout of propellant charge.\nVery effective against armor opponent.\nDue to it high-velocity.\nIt can not penetrate an entity trade off with higher in damage.\n+50 Damage againts opponent's Head,,,,,,,,,,,,,,,
+ammo556mmArmorPiercing,items,gun,,5.56x45mm.,5.56x45mm AP.,,,,,,,,,,,,,,
+ammo556mmArmorPiercingDesc,items,gun,,,A light rifle caliber with Steel Core Bullet.\nVery F. effective against armor opponent.\nDue to it high-velocity and bullet mass.\nIt can penetrate 3 entity (Zombie).\nAlso Expensive as Hell.,,,,,,,,,,,,,,,
+IZYgunT2ARCabineCAR15,items,gun,,CAR-15 (T2),CAR-15 (T2),,,,,,,,,,,,,,
+IZYgunT2ARCabineCAR15Desc,items,gun,,,A compact version of M-16 rifle.\nChambered in 5.56x45mm.\nRepair with a - Repair Kit.\nScrap to - Machinegun parts.,,,,,,,,,,,,,,,
+IZYgunT3ARCabineM4Carbine,items,gun,,M4 Carbine (T3),M4 Carbine (T3),,,,,,,,,,,,,,
+IZYgunT3ARCabineM4CarbineDesc,items,gun,,,A medium length AR-15 Rifle.\nChambered in 5.56x45mm.\nRepair with a - Repair Kit.\nScrap to - Machinegun parts.,,,,,,,,,,,,,,,

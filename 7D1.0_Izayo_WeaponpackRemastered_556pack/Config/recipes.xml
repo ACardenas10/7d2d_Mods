@@ -1,0 +1,89 @@
+<addnew>
+
+	<append xpath="/recipes">
+	
+		<!--	***************************	-->
+				<!--	AMMO 556    -->
+		<!--	***************************	-->
+	
+		<recipe name="ammo556mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourceScrapIron" count="1"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		
+		<recipe name="ammo556mmHIpower" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceScrapIron" count="1"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		
+		<recipe name="ammo556mmArmorPiercing" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		
+		<!--	***************************	-->
+			<!--	AMMO 556 Bundle   -->
+		<!--	***************************	-->
+		<recipe name="ammo556mmBulletBallBundle" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="180"/>
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		
+		<recipe name="ammo556mmHIpowerBundle" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="380"/>
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		
+		<recipe name="ammo556mmArmorPiercingBundle" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="260"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+	
+		<!--	***************************	-->
+			<!--	556 pack carbine    -->
+		<!--	***************************	-->
+	
+		<recipe name="IZYgunT2ARCabineCAR15" count="1" craft_area="workbench" tags="learnable,perkMachineGunner">
+			<ingredient name="gunMGT1AK47Parts" count="7"/>
+			<ingredient name="resourceForgedSteel" count="35"/>
+			<ingredient name="resourceDuctTape" count="8"/>
+			<ingredient name="resourceSpring" count="12"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="gunMGT1AK47Parts,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceSpring"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="IZYgunT3ARCabineM4Carbine" count="1" craft_area="workbench" tags="learnable,perkMachineGunner">
+			<ingredient name="gunMGT1AK47Parts" count="10"/>
+			<ingredient name="resourceForgedSteel" count="80"/>
+			<ingredient name="resourceDuctTape" count="8"/>
+			<ingredient name="resourceSpring" count="15"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="gunMGT1AK47Parts,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceSpring"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	</append>
+
+
+</addnew>

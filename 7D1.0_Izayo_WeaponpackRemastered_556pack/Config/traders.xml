@@ -1,0 +1,27 @@
+<configs>
+
+		<!--	GUN_TRADER	-->
+		
+	<append xpath="//trader_item_group[@name='groupRangedAll']">
+		<item name="IZYgunT2ARCabineCAR15" quality="1,5"/>
+		<item name="IZYgunT3ARCabineM4Carbine" quality="1,5"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoBrass']">
+		<item name="ammo556mmBulletBall" count="50,120"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoHP']">
+		<item name="ammo556mmHIpower" count="30,60"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoAP']">
+		<item name="ammo556mmArmorPiercing" count="30,60"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoAll']">
+		<item name="ammo556mmBulletBall" count="50,120"/>
+		<item name="ammo556mmArmorPiercing" count="30,60"/>
+		<item name="ammo556mmHIpower" count="30,60"/>
+	</append>
+</configs>	

@@ -1,0 +1,10 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+ammo45ACPBulletBall,items,gun,,.45 ACP,.45 ACP.,,,,,,,,,,,,,,
+ammo45ACPBulletBallDesc,items,gun,,,An American popular Pistol caliber.\nDeal high damage due to it bullet diameter.,,,,,,,,,,,,,,,
+IZYgunT1Pistol45M1917,items,gun,,.45 Revolver(T1),.45 Revolver(T1),,,,,,,,,,,,,,
+IZYgunT1Pistol45M1917Desc,items,gun,,,An Army Revolver Served In WW1-2.\nChambered in .45 ACP .\nRepair with a - Repair Kit.\nScrap to - Pistol Parts.\nCan have the Holdstyle Mod.,,,,,,,,,,,,,,,
+IZYgunT2Pistol45M1911A1,items,gun,,M1911(T2),M1911(T2),,,,,,,,,,,,,,
+IZYgunT2Pistol45M1911A1Desc,items,gun,,,A Famous American Pistol .in service since WW1 - Present .\nChambered in .45 ACP .\nRepair with a - Repair Kit.\nScrap to - Pistol Parts.\nCan have the Holdstyle Mod.,,,,,,,,,,,,,,,
+IZYgunT445SMGM1928thompson,items,gun,,M1928 Thompson Drum Magazine(T4),M1928 Thompson Drum Magazine(T4),,,,,,,,,,,,,,
+IZYgunT445SMGM1928thompsonDesc,items,gun,,,A famous American WW2 sub-machinegun.\nChambered in .45 ACP .\nCome with drum magazine as default.\nRepair with a -Advance Repair Kit.\nScrap to - Machinegun Parts.,,,,,,,,,,,,,,,

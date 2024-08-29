@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addnew>
+		<!--	762pack	-->
+		
+		<!--	ExtendMAG	-->
+		<!--	GRIP	-->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
+		<item_property_overrides name="IZYgunT1ARSTG44N">
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?IZY_AR_Sturmrifle_grip.Prefab"/>
+		</item_property_overrides>
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
+	
+
+		
+	</append>
+
+
+		<!--	REFLEXSIGHT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+	
+		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
+			<property name="ScopeCameraOffset" value=".0082,.03165,.16"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted">
+			<property name="ScopeCameraOffset" value="0,.0474,.22"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+			<!--	AR 	-->
+		<item_property_overrides name="IZYgunT1ARSTG44N">
+			<property name="ScopeCameraOffset" value="-.0008,-.0032,-.01"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+	</append>
+	
+		<!--	X2SCOPE		-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+	
+		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
+			<property name="Zoom_max_out" value="28"/>
+			<property name="Zoom_max_in" value="28"/>
+			<property name="ScopeCameraOffset" value=".0078,.0191,.12"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?IZY_SNIPER_Mosin_scope.Prefab"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted">
+			<property name="Zoom_max_out" value="25"/>
+			<property name="Zoom_max_in" value="25"/>
+			<property name="ScopeCameraOffset" value="0,.0284,.02"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+			<!--	AR 	-->
+		<item_property_overrides name="IZYgunT1ARSTG44N">
+			<property name="Zoom_max_out" value="28"/>
+			<property name="Zoom_max_in" value="28"/>
+			<property name="ScopeCameraOffset" value="-.0008,-.00495,-.005"/>
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+	
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
+	
+		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
+			<property name="ScopeCameraOffset" value=".0078,.02,.1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?IZY_SNIPER_Mosin_scopeX4X8.Prefab"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted">
+			<property name="ScopeCameraOffset" value=".02,.06,.19"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+	
+	</append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+	
+		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
+			<property name="ScopeCameraOffset" value=".0078,.015,.15"/>
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?IZY_SNIPER_Mosin_scopeX4X8.Prefab"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted">
+			<property name="ScopeCameraOffset" value=".01,.05,.19"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+		</item_property_overrides>
+	
+	</append>
+	
+						<!-- SILENCER -->
+			
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+	
+		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
+			<property name="Sound_start" value="MosinN2_silen_fire"/>
+			<property name="Sound_loop" value="MosinN2_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted">
+			<property name="Sound_start" value="M1garandN_silen_fire"/>
+			<property name="Sound_loop" value="M1garandN_silen_fire"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT1ARSTG44N">
+			<property name="Sound_start" value="SturmRifle_silen_fire"/>
+			<property name="Sound_loop" value="SturmRifle_silen_fire"/>
+		</item_property_overrides>
+	
+	</append>
+	
+</addnew>

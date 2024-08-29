@@ -1,0 +1,26 @@
+<configs>
+
+											<!-- Chonky's code -->
+<!-- T0 SMG -->
+		<!-- T0 Pipesmg -->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/display_entry[@item='gunHandgunT0PipePistol']">
+	<unlock_entry item="IZYgunT0SMGPIPEsubmachinegun" unlock_tier="1" tags="IZYgunT0SMGPIPEsubmachinegun"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="IZYgunT0SMGPIPEsubmachinegun"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="2,4,6,8,10,100" value="1,2,3,4,5,5" tags="IZYgunT0SMGPIPEsubmachinegun"/>
+</append>
+
+<!-- T2 smg -->
+		<!-- T2 UZI SMG -->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/display_entry[@item='gunMGT2TacticalAR']">
+	<unlock_entry item="IZYgunT2SMGUZIsubmachinegun" unlock_tier="1" tags="IZYgunT2SMGUZIsubmachinegun"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="IZYgunT2SMGUZIsubmachinegun"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="32,39,46,53,60,100" value="1,2,3,4,5,5" tags="IZYgunT2SMGUZIsubmachinegun"/>
+</append>
+
+<!-- -->
+	
+</configs>	

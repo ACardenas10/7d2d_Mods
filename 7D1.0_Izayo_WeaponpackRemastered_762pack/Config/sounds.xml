@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<append xpath="/Sounds">
+
+
+<SoundDataNode name="MosinN2_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="110" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?MosinN2_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="MosinN2_silen_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="20" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?MosinN2_silen_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="M1garandN_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="110" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?M1garandN_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="M1garandN_silen_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="22" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?M1garandN_silen_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="SturmRifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="100" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?SturmRifle_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="60"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="SturmRifle_silen_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="22" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_762_Pack_MainResource.unity3d?SturmRifle_silen_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="60"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+</append>
+
+</configs>

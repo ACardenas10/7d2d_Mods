@@ -1,0 +1,55 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT1_Machinegunner']">
+						<!-- tier 01  -->
+		<lootgroup name="groupWeaponsT1_MG_STG44N" count="all" loot_quality_template="QLTemplateT1">
+			<item name="IZYgunT1ARSTG44N"/>
+		</lootgroup>
+
+	</insertAfter>
+		
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT1_DeadEye']">
+						<!-- tier 01  -->
+		<lootgroup name="groupWeaponsT1_DeadEye_MosinN" count="all" loot_quality_template="QLTemplateT1">
+			<item name="IZYgunT1SNIPERRIFLE762Mosinnagant"/>
+		</lootgroup>
+
+	</insertAfter>
+		
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT2_DeadEye']">
+						<!-- tier 02  -->
+		<lootgroup name="groupWeaponsT2_DeadEye_M1N" count="all" loot_quality_template="QLTemplateT2">
+			<item name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted"/>
+		</lootgroup>
+
+	</insertAfter>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+		<!-- Adding new weapon groups to loot groups  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+		
+	<append xpath="//lootgroup[@name='groupWeaponsT1_Ranged']">	
+		<item group="groupWeaponsT1_DeadEye_MosinN"/>
+		<item group="groupWeaponsT1_MG_STG44N"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT2_Ranged']">	
+		<item group="groupWeaponsT2_DeadEye_M1N"/>
+	</append>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+				<!-- QUEST REWARD 762 GUN  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT1']">	
+		<item name="IZYgunT1SNIPERRIFLE762Mosinnagant"/>
+		<item name="IZYgunT1ARSTG44N"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT2']">	
+		<item name="IZYgunT2SNIPERRIFLE762M1garandNavyconverted"/>
+	</append>
+
+</configs>

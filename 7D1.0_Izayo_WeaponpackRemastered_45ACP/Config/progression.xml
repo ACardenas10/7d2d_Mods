@@ -1,0 +1,26 @@
+<configs>
+
+					<!--Chonky's Code -->
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/display_entry[@item='gunHandgunT1Pistol']">
+	<unlock_entry item="IZYgunT1Pistol45M1917" unlock_tier="1" tags="IZYgunT1Pistol45M1917"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="IZYgunT1Pistol45M1917"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,25,100" value="1,2,3,4,5,5" tags="IZYgunT1Pistol45M1917"/>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/display_entry[@item='gunHandgunT2Magnum44']">
+	<unlock_entry item="IZYgunT2Pistol45M1911A1" unlock_tier="1" tags="IZYgunT2Pistol45M1911A1"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="IZYgunT2Pistol45M1911A1"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="29,33,37,41,45,100" value="1,2,3,4,5,5" tags="IZYgunT2Pistol45M1911A1"/>
+</append>
+
+
+
+
+<!-- -->
+
+</configs>	

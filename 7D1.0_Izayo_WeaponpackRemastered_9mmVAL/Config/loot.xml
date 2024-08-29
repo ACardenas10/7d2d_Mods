@@ -1,0 +1,41 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT0_Machinegunner']">
+					<!-- tier 0  -->
+		<lootgroup name="groupWeaponsT0_SMG_PIPESMG" count="all" loot_quality_template="QLTemplateT0">
+			<item name="IZYgunT0SMGPIPEsubmachinegun"/>
+		</lootgroup>
+
+	</insertAfter>
+		
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT2_Machinegunner']">
+					<!-- tier 02  -->
+		<lootgroup name="groupWeaponsT2_SMG_UZI" count="all" loot_quality_template="QLTemplateT2">
+			<item name="IZYgunT2SMGUZIsubmachinegun"/>
+		</lootgroup>
+
+	</insertAfter>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+		<!-- Adding new weapon groups to loot groups  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT0_Ranged']">	
+		<item group="groupWeaponsT0_SMG_PIPESMG"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT2_Ranged']">	
+		<item group="groupWeaponsT2_SMG_UZI"/>
+	</append>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+				<!-- QUEST REWARD 9MM gun  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+
+	<append xpath="//lootgroup[@name='groupQuestWeaponsRangedT2']">	
+		<item name="IZYgunT2SMGUZIsubmachinegun"/>
+	</append>
+
+</configs>

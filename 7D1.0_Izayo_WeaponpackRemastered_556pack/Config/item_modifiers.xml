@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addnew>
+
+		<!--	ExtendMAG	-->
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
+	
+		<item_property_overrides name="IZYgunT2ARCabineCAR15">
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource.unity3d?IZY_AR_CAR15_magazine.Prefab"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3ARCabineM4Carbine">
+			<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource.unity3d?IZY_AR_M4CARBINE_magazine.Prefab"/>
+		</item_property_overrides>
+		
+	</append>
+
+
+		<!--	REFLEXSIGHT 	-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+	
+		<item_property_overrides name="IZYgunT2ARCabineCAR15">
+			<property name="ScopeCameraOffset" value="-.0008,-.032,-.01"/>
+			<property name="CrosshairOnAim" value="true"/> 
+			<property name="CrosshairUpAfterShot" value="true"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3ARCabineM4Carbine">
+			<property name="ScopeCameraOffset" value="-.0013,-.00134,-.008"/>
+			<property name="CrosshairOnAim" value="true"/> 
+			<property name="CrosshairUpAfterShot" value="true"/>
+		</item_property_overrides>
+		
+	</append>
+	
+		<!--	X2SCOPE		-->
+		
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+	
+		<item_property_overrides name="IZYgunT2ARCabineCAR15">
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD.tga"/>
+			<property name="Zoom_max_out" value="40"/>
+			<property name="Zoom_max_in" value="40"/>
+			<property name="ScopeCameraOffset" value="-.001,-.035,-.04"/>
+			<property name="CrosshairOnAim" value="true"/> 
+			<property name="CrosshairUpAfterShot" value="true"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3ARCabineM4Carbine">
+			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD.tga"/>
+			<property name="Zoom_max_out" value="40"/>
+			<property name="Zoom_max_in" value="40"/>
+			<property name="ScopeCameraOffset" value="-.00082,-.0002,-.008"/>
+			<property name="CrosshairOnAim" value="true"/> 
+			<property name="CrosshairUpAfterShot" value="true"/>
+		</item_property_overrides>
+	
+	</append>
+	
+						<!-- SILENCER -->
+			
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+	
+		<item_property_overrides name="IZYgunT2ARCabineCAR15">
+			<property name="Sound_start" value="M4CARINE_silen_fire"/>
+			<property name="Sound_loop" value="M4CARINE_silen_fire"/>
+			<property name="Sound_end" value="M4CARINE_silen_end"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="IZYgunT3ARCabineM4Carbine">
+			<property name="Sound_start" value="M4CARINE_silen_fire"/>
+			<property name="Sound_loop" value="M4CARINE_silen_fire"/>
+			<property name="Sound_end" value="M4CARINE_silen_end"/>
+		</item_property_overrides>
+	
+	</append>
+	
+</addnew>
